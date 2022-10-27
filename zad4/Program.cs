@@ -6,11 +6,11 @@
 Console.WriteLine("Введите натуральное число ");
 int x=Convert.ToInt32 ( Console.ReadLine());
 int i = 1;
-
+Console.Write("Четные числа: ");
 while (i<=x)
 
 {
    if (i%2==0)
-    Console.Write( i);
+    Console.Write( i + " ");
     i=i+1;
 }
