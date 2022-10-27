@@ -4,31 +4,26 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.WriteLine("Введите три числа "); //вывели значение в скобках
+Console.WriteLine("Введите три числа (a, b, c)"); //вывели значение в скобках
+Console.Write("Введите три числа: a");
 int a=Convert.ToInt32 ( Console.ReadLine()); // производим конвертацию в int 32
+Console.Write("Введите три числа: b");
 int b=Convert.ToInt32 ( Console.ReadLine());
-int b=Convert.ToInt32 ( Console.ReadLine());
-int max1;
-int max2;
-int max;
-int c;
-if (a>b)
-    {
-        max1 = a;
-                     
-    }
+Console.Write("Введите три числа: c");
+int c=Convert.ToInt32 ( Console.ReadLine());
 
-else if (a<b)
-    {
-        max2 = b;                     
-    }
-if (max1 < c)
-    {
-        console.Write("Максимальное число " + с);
+if (a<b) 
+    {if (b<c)
+      { 
+        Console.WriteLine($"максимальное число равно c: {c}");
+         }
+      else 
+      Console.WriteLine($"максимальное число равно b: {b}");
     }
 else 
-    Console.Write("Максимальное число " + a);
-
-    
-
-Console.Write(b+ " > "+a);
+    if (a>c)
+    { 
+        Console.WriteLine($"максимальное число равно a: {a}");
+    }
+    else 
+      Console.WriteLine($"максимальное число равно c: {c}");
